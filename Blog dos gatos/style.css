@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'ulish', sans-serif;
+}
+body{
+  
+    max-width: 32rem;
+  margin: auto;
+  margin-top: 0;
+  font-family: 'Mulish', sans-serif;
+
+  
+}
+header{
+    display: flex;
+    background: #065E7C;
+    padding: 16px 28px;
+    gap: 26px;
+   
+}
+header form{
+    flex: 1;
+}
+.input-wrapper label{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    
+}
+.input-wrapper input {
+    width: 100%;
+    padding:12px;
+    background: #387E96;
+    border: none;
+    border-radius: 4px;
+   
+}
+
+.input-wrapper input::placeholder {
+    color: white;
+    opacity: 0.5;
+
+}
+#main-image {
+   height: 219px;
+  overflow: hidden;
+
+}
+.sidebar-image {
+    width: 151px;
+    height: 84px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  
+    display: block;
+  
+}
+.sidebar-photo{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+main h1{
+    margin-top: 31px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 160%;
+    color: #202024;
+  
+   
+}
+#titulo{
+    margin-top: 31px;
+    margin-bottom: 8px;
+}
+.like-botton{
+    margin-bottom: 31px;
+}
+ main p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 160%;
+    color: #121214;
+  
+ }
+
+.related h2{
+    margin-top: 22px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: bold;
+    color: 202024;
+ }
+
+footer{
+    margin-top: 8px;
+    background: #387E96;
+    color: white;
+    padding: 26px;
+    text-align: center;
+}
+.sidebar-image h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 160%;
+    color: #202024;
+
+}
+.sidebar-image p{
+
+    font-size: 14px;
+    line-height: 160%;
+    color: #121214;
+
+}
+
+@media(min-width:1020px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "A A A"
+        "B B C"
+        "D D D";
+        max-width: fit-content;
+        margin: auto;
+       
+        
+      
+    }
+
+    header{
+        grid-area: A;
+        padding-left: 112px;
+    }
+    main{
+        grid-area: B;
+        margin-left: 112px;
+        margin-right: 34px;
+        padding-right: 112px;
+        width: 800px;
+     
+        
+    }
+    .related{
+        grid-area: C;
+        margin-right: 110px;
+        
+    }
+    footer{ grid-area: D;}
+    #main-image{
+        width: 100%;
+      height:  405px;
+        margin-top: 44px;
+    }
+    #titulo{ display: flex;
+        align-items: baseline;
+    justify-content: space-between;}
+   
+}
+
